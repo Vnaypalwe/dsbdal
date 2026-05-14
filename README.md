@@ -194,3 +194,15 @@ Here's everything in one go: the problem statement, your code recap, and a compl
 10. What is the shape of your DataFrame and how do you check it?
 
 If you can answer these 10 cleanly, you're solid. The other 30 are bonus depth.
+
+import matplotlib.pyplot as plt
+
+# Plot pie chart of post types
+data['Type'].value_counts().plot(
+    kind='pie',
+    autopct='%1.1f%%',
+    title='Distribution of Post Types'
+)
+plt.ylabel('')   # removes the default ugly y-label
+plt.show()
+
